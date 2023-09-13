@@ -47,12 +47,11 @@ tl.to("#green",{
     duration : .4,
     delay : -.3
 })
-tl.to("#page1",{
-    height : "100vh",
-    width :  "100vw",
+tl.to("#loader",{
+    height : "0vh",
     top : 0,
     duration : .4,
-    delay : -.1
+    delay : .2,
 })
 
 let openMenu =()=>{
@@ -68,3 +67,11 @@ let closeMenu = ()=>{
     q1.style.width = "0vw";
     q2.style.display = "none";
 }
+
+let c1 = gsap.timeline()
+c1.to("#page2 #card1",{
+    rotate : "50deg"
+})
+c1.to("#page2 #card2",{
+    rotate : "-50deg",
+})
