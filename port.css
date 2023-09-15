@@ -239,13 +239,13 @@ html,body{
   display: none;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
   position: absolute;
   border : 1px solid black;
-  bottom: 0%;
-  left : 40%;
+  bottom: -5%;
+  left : 38%;
 }
 .card{
   position: absolute;
