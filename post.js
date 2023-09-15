@@ -71,7 +71,7 @@ let closeMenu = ()=>{
     q2.style.display = "none";
 }
 
-var typed = new Typed('#card2 p',{
-    strings: ['Harsh','developer','engineer'],
-    typeSpeed: 50,
-});
+// var typed = new Typed('#card2 p',{
+//     strings: ['Harsh','developer','engineer'],
+//     typeSpeed: 50,
+// });
