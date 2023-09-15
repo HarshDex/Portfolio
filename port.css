@@ -205,31 +205,83 @@ html,body{
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: black;
   justify-content: center;
   align-items: center;
 }
 .card-container{
   display: flex;
   position: relative;
+  top: 10%;
   height: 90%;
   width: 90%;
-  background-color: rgb(34, 34, 174);
 }
-.image-part{
-  background-color: red;
-  height: 100%;
-  width: 50%;
-}
+
 .card-part{
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: -5%;
+}
+
+.image-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   height: 100%;
   width: 50%;
 }
+.image-part #button{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  position: absolute;
+  border : 1px solid black;
+  bottom: 0%;
+  left : 40%;
+}
+.card{
+  position: absolute;
+  height: 86%;
+  width: 55%;
+  border-radius: 10%;
+  transition: all ease 1s;
+}
+.card-part p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.6em;
+}
+
+.card{
+  position: absolute;
+  height: 86%;
+  width: 55%;
+  border-radius: 10%;
+  transition: all ease 1s;
+  background-color: green;
+}
+/* .image-part #assetImage{
+  height: 70%;
+  width: 60%;
+  position: absolute;
+  border: none;
+  right: 0;
+} */
+
+
+
 /* ? css for page 3 */
 #page3{
   height: 100vh;
   width: 100vw;
-  background-color: blue;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) { }

@@ -9,10 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Megrim&family=Style+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="cursor"></div>
@@ -87,14 +86,16 @@
         </div>
         <div id="page2">
             <div class="card-container">
-                <div class="image-part"> 
-                    <img src="" alt="">
-                </div>
                 <div class = "card-part">
-                    <div class="card" id="card1">
-                        hello my name is <span></span>
-                    </div>
-                </div> 
+                    <p>Hey! I am a third-year B.Tech student at Graphic Era Hill University, specializing in Computer Science and Engineering. Possessing advanced skills in both app and web development, I demonstrate a profound dedication to crafting innovative digital solutions.</p>
+                </div>
+                <div class="image-part"> 
+                    <div class="card" id = "card1"></div>
+                    <div class="card" id = "card2"></div>
+                    <div class ="card" id="card3"></div>
+                    <div class="card" id="card4" onclick="cardAnimation()"></div>
+                    <div id="button" onclick="displayNone()">X</div>
+                </div>
             </div>
         </div>
         <div id="page3">
@@ -105,6 +106,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROst.bIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./card.js"></script>
     <script src="./post.js"></script>
 </body>
 </html>
