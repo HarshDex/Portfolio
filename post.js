@@ -1,3 +1,6 @@
+AOS.init({ 
+    duration : 2000
+});
 function revealToSpan(){
     document.querySelectorAll(".reveal").forEach(function(elem){
         let spanChild = document.createElement("span");
@@ -68,10 +71,7 @@ let closeMenu = ()=>{
     q2.style.display = "none";
 }
 
-let c1 = gsap.timeline()
-c1.to("#page2 #card1",{
-    rotate : "50deg"
-})
-c1.to("#page2 #card2",{
-    rotate : "-50deg",
-})
+var typed = new Typed('#card2 p',{
+    strings: ['Harsh','developer','engineer'],
+    typeSpeed: 50,
+});
