@@ -71,17 +71,6 @@ let closeMenu = ()=>{
     q2.style.display = "none";
 }
 
-// var typed = new Typed('#card2 p',{
-//     strings: ['Harsh','developer','engineer'],
-//     typeSpeed: 50,
-// });
-
-// let card = document.querySelector(".card");
-// card.addEventListener("onmouseenter",(dets)=>{
-//     console.log("hello world " + dets);
-// })
-
-let card = document.querySelector(".card");
 let card1 = document.querySelector("#card1");
 let card2 = document.querySelector("#card2");
 let card3 = document.querySelector("#card3");
@@ -120,25 +109,18 @@ function displayNone(){
     card2.style.left = "20%";
     card2.style.top = "5%";
 
-
-
     card3.style.transform  = "rotate(0deg)";
     card3.style.backgroundColor = "blue";
     card3.style.left = "20%";
     card3.style.top = "5%";
-
-
 
     card4.style.transform  = "rotate(0deg)";
     card4.style.backgroundColor = "blue";
     card4.style.left = "20%";
     card4.style.top = "5%";
 
-
-
     imagePart.style.display = "flex";
     imagePart.style.justifyContent = "center";
     imagePart.style.alignCenter = "center";
-
     button.style.display = "none";
 }
