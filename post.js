@@ -1,6 +1,5 @@
 AOS.init({ 
-    duration : 1000
-    
+    duration : 2000
 });
 function revealToSpan(){
     document.querySelectorAll(".reveal").forEach(function(elem){
