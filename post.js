@@ -136,21 +136,23 @@ gsap.to("#main",{
 })
 gsap.from(".card-part",{
     x : -370,
+    ease : "slow.out",
     scrollTrigger : {
         trigger : "#page1",
         start : "top 60%",
         end : "top 5%",
         markers : true,
-        scrub :4,
+        scrub :2,
     }
 })
 gsap.from(".image-part",{
     x : 500,
+    ease : "slow.out",
     scrollTrigger : {
         trigger : "#page1",
         start : "top 60%",
         end : "top 15%",
         markers : true,
-        scrub :4,
+        scrub :2,
     }
 })
