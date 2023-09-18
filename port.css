@@ -207,6 +207,7 @@ html,body{
   width: 100vw;
   justify-content: center;
   align-items: center;
+  color : white;
 }
 .card-container{
   display: flex;
@@ -232,10 +233,12 @@ html,body{
   justify-content: center;
   align-items: center;
   position: relative;
+  top: -10%;
   height: 100%;
   width: 50%;
 }
 .image-part #button{
+  color : white;
   display: none;
   justify-content: center;
   align-items: center;
@@ -264,9 +267,11 @@ html,body{
   position: absolute;
   height: 86%;
   width: 55%;
+  border: 1px solid black;
   border-radius: 10%;
   transition: all ease 1s;
   background-color: green;
+  overflow: hidden;
 }
 /* .image-part #assetImage{
   height: 70%;
@@ -276,6 +281,11 @@ html,body{
   right: 0;
 } */
 
+.card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 /* ? css for page 3 */

@@ -1,5 +1,6 @@
 AOS.init({ 
-    duration : 2000
+    duration : 1000
+    
 });
 function revealToSpan(){
     document.querySelectorAll(".reveal").forEach(function(elem){
@@ -124,3 +125,33 @@ function displayNone(){
     imagePart.style.alignCenter = "center";
     button.style.display = "none";
 }
+gsap.registerPlugin(ScrollTrigger)
+gsap.to("#main",{
+    backgroundColor : "black",
+    scrollTrigger : {
+        trigger : "#page1",
+        start : "top 60%",
+        end : "top 10%",
+        scrub : 4,
+    }
+})
+gsap.from(".card-part",{
+    x : -370,
+    scrollTrigger : {
+        trigger : "#page1",
+        start : "top 60%",
+        end : "top 5%",
+        markers : true,
+        scrub :4,
+    }
+})
+gsap.from(".image-part",{
+    x : 500,
+    scrollTrigger : {
+        trigger : "#page1",
+        start : "top 60%",
+        end : "top 15%",
+        markers : true,
+        scrub :4,
+    }
+})
