@@ -141,7 +141,6 @@ gsap.from(".card-part",{
         trigger : "#page1",
         start : "top 60%",
         end : "top 5%",
-        markers : true,
         scrub :2,
     }
 })
@@ -152,7 +151,6 @@ gsap.from(".image-part",{
         trigger : "#page1",
         start : "top 60%",
         end : "top 15%",
-        markers : true,
         scrub :2,
     }
 })
