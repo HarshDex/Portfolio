@@ -154,3 +154,25 @@ gsap.from(".image-part",{
         scrub :2,
     }
 })
+gsap.from(".text h1",{
+    transform : "scale(0.8)",
+    ease : "power1.out",
+    scrollTrigger : {
+        trigger : "#page2",
+        start : "top 60%",
+        end : "top : 40%",
+        markers : true,
+        scrub : 3,
+    }
+})
+gsap.from(".text h2",{
+    transform : "scale(0.8)",
+    ease : "power1.out",
+    scrollTrigger : {
+        trigger : "#page2",
+        start : "top 60%",
+        end : "top : 40%",
+        markers : true,
+        scrub : 3,
+    }
+})
