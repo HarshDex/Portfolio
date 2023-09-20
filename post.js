@@ -125,15 +125,15 @@ function displayNone(){
     button.style.display = "none";
 }
 gsap.registerPlugin(ScrollTrigger)
-gsap.to("#main",{
-    backgroundColor : "black",
-    scrollTrigger : {
-        trigger : "#page1",
-        start : "top 60%",
-        end : "top 10%",
-        scrub : 4,
-    }
-})
+// gsap.to("#main",{
+//     backgroundColor : "black",
+//     scrollTrigger : {
+//         trigger : "#page1",
+//         start : "top 60%",
+//         end : "top 10%",
+//         scrub : 4,
+//     }
+// })
 gsap.from(".card-part",{
     x : -370,
     ease : "power1.out",
@@ -161,7 +161,6 @@ gsap.from(".text h1",{
         trigger : "#page2",
         start : "top 60%",
         end : "top : 40%",
-        markers : true,
         scrub : 3,
     }
 })
@@ -172,7 +171,6 @@ gsap.from(".text h2",{
         trigger : "#page2",
         start : "top 60%",
         end : "top : 40%",
-        markers : true,
         scrub : 3,
     }
 })
