@@ -174,3 +174,14 @@ gsap.from(".text h2",{
         scrub : 3,
     }
 })
+gsap.to("#box",{
+    scale : 1,
+    ease : "power1.out",
+    scrollTrigger : {
+        trigger : "#page3",
+        start : "top 15",
+        end : "top 10%",
+        // pin : true,
+        scrub : 3,
+    }
+})

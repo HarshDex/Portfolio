@@ -337,16 +337,11 @@ html,body{
   width: 100vw;
 }
 #box{
-  height: 20%;
-  width: 15%;
-  background-color: pink;
+  height: 90%;
+  width: 95%;
+  background-color: rgb(31, 30, 30);
+  transform : scale(0);
 }
-
-#box :hover ~ #cursor{
-  transform: scale(5);
-}
-
-
 
 @media all and (min-width: 1024px) and (max-width: 1280px) { }
 
