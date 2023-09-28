@@ -301,6 +301,7 @@ html,body{
 
 /* ? css for page 3 */
 #page3{
+  /* margin-top: 35%; */
   position: relative;
   display: flex;
   align-items: center;
@@ -325,6 +326,7 @@ html,body{
   height: 80%;
   width: 50%; 
   right: -10%;
+  bottom : 15%;
 }
 #page3-image img{
   height: 100%;
@@ -334,28 +336,21 @@ html,body{
 
 #page4{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   height: 100vh;
-  width: 100vw;
-  /* background-image: url("./assets/zaynmanlik.png");
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
-  
-  /* background-size: cover; */
+  width: 10vw;
+  background-color: white;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
-.page4{
-  /* background-color: blue; */
+
+.page5{
   width: 100vw;
   display: flex;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
 }
-.page4-good-section{
+.page5-good-section{
   width: 95%;
   height: 5vh;
   margin-top:2%;
@@ -366,7 +361,7 @@ html,body{
   justify-content: space-between;
   border-bottom : 1.5px solid rgb(186, 183, 183);
 }
-.page4-image-container{
+.page5-image-container{
   gap: 1%;
   width : 95%;
   display: flex;
@@ -376,24 +371,88 @@ html,body{
   align-items: center;
   justify-content: center;
 }
-.page4-image-container-image{
+.page5-image-container-image{
   height: 95%;
   width: 24em;
   overflow: hidden;
   border-radius: 20px;
   overflow: hidden;
 }
-.page4-image-container-image img{
+.page5-image-container-image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 
-#page5{
-  height: 100vh;
-  width: 100vw;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media all and (min-width: 1024px) and (max-width: 1280px) { }

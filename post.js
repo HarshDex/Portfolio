@@ -175,7 +175,7 @@ gsap.from(".text h2",{
     }
 })
 
-let projects = document.querySelectorAll(".page4-image-container-image img");
+let projects = document.querySelectorAll(".page5-image-container-image img");
 projects.forEach((elem)=>{
     elem.addEventListener("mousemove",(dets)=>{
         cursor.style.height = "100px";
@@ -191,3 +191,15 @@ projects.forEach((elem)=>{
         cursor.innerHTML = "";
     })
 })
+
+gsap.to("#page4",{
+    width : "100vw",
+    scrollTrigger : {
+        trigger : "#page4",
+        start : "top bottom",
+        end : "top 80%",
+        scrub : true,
+        markers : true,
+    }
+})
+
