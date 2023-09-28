@@ -191,15 +191,3 @@ projects.forEach((elem)=>{
         cursor.innerHTML = "";
     })
 })
-
-
-gsap.to(".page4",{
-    scrollTrigger : {
-        trigger : ".page4",
-        start : "top top",
-        end : "+=300 top",
-        markers : true,
-        pin : true,
-        scrub : true,
-    }
-})
