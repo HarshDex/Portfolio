@@ -348,6 +348,7 @@ html,body{
   /* background-size: cover; */
 }
 .page4{
+  /* background-color: blue; */
   width: 100vw;
   display: flex;
   min-height: 100vh;
@@ -363,7 +364,7 @@ html,body{
   font-weight: 100;
   align-items : flex-end;
   justify-content: space-between;
-  border-bottom : 1.5px solid black;
+  border-bottom : 1.5px solid rgb(186, 183, 183);
 }
 .page4-image-container{
   gap: 1%;

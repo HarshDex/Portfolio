@@ -193,11 +193,11 @@ projects.forEach((elem)=>{
 })
 
 
-gsap.to("#page4",{
+gsap.to(".page4",{
     scrollTrigger : {
-        trigger : "#page4",
-        start : "top center",
-        end : "top center",
+        trigger : ".page4",
+        start : "top top",
+        end : "+=300 top",
         markers : true,
         pin : true,
         scrub : true,
