@@ -174,14 +174,32 @@ gsap.from(".text h2",{
         scrub : 3,
     }
 })
-gsap.to("#box",{
-    scale : 1,
-    ease : "power1.out",
+
+let projects = document.querySelectorAll(".page4-image-container-image img");
+projects.forEach((elem)=>{
+    elem.addEventListener("mousemove",(dets)=>{
+        cursor.style.height = "100px";
+        cursor.style.width = "100px";
+        cursor.style.backgroundColor = "white";
+        cursor.style.color = "black";
+        cursor.innerHTML = "Visit ↗"
+    })
+    elem.addEventListener("mouseleave",(dets)=>{
+        cursor.style.height = "10px";
+        cursor.style.width = "10px";
+        cursor.style.backgroundColor = "orange";
+        cursor.innerHTML = "";
+    })
+})
+
+
+gsap.to("#page4",{
     scrollTrigger : {
-        trigger : "#page3",
-        start : "top 15",
-        end : "top 10%",
-        // pin : true,
-        scrub : 3,
+        trigger : "#page4",
+        start : "top center",
+        end : "top center",
+        markers : true,
+        pin : true,
+        scrub : true,
     }
 })
