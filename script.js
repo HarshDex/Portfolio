@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
   gsap.to('.page2', {
-    scrollTrigger: {
+      scrollTrigger: {
       trigger: ".page2",
       scroller: '.main',
       start: "top top",
@@ -170,10 +170,37 @@ document.addEventListener("DOMContentLoaded", function () {
         const targetIndex = Math.floor(progress * (dynamicText.length - 1));
         currentTextIndex = targetIndex;
         dynamicTextElement.textContent = dynamicText[currentTextIndex];
+      },
+      onComplete: () => {
+        locoScroll.update();
+        ScrollTrigger.refresh();
       }
     }
   });
-});
+  
+
+const slider = document.querySelector(".slider");
+
+function activate(e) {
+  const items = document.querySelectorAll(".item");
+  e.target.matches(".next") && slider.append(items[0]);
+  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+}
+
+document.addEventListener("click", activate, false);
+
+
+gsap.to('.page3',{
+  opacity:1,
+  scrollTrigger : {
+    trigger : ".page3",
+    scroller : ".main",
+    start : 'top 70%',
+    end : "top 10%",
+    scrub : true,
+    markers : true,
+  }
+})
 
 
 locoScroll.on('scroll', (instance) => {
@@ -184,3 +211,4 @@ locoScroll.on('scroll', (instance) => {
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
+});

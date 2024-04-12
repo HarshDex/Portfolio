@@ -25,7 +25,7 @@ body {
   height:15px;
   width:15px;
   border-radius: 100%;
-  z-index: 99;
+  z-index: 5;
   background-color: rgb(94, 1, 131);
   display: none;
 }
@@ -281,26 +281,51 @@ body {
   right: 7.3vw;
   top: 76vh;
   animation: rotateScroll 8s linear infinite ;
+  cursor : pointer;
+}
+.page2-gif img:hover{
+  transform : scale(1.2);
 }
 @keyframes rotateScroll {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 .page2-gif img{
   height:100%;
   width: 100%;
   object-fit: cover;
-}
+  transition: all ease .3s;
 
+}
 /* page 2 ends */
 
 /* page3 starts */
-.page3{
+.page3 {
   height: 100vh;
+  position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+}
+.page3 h1{
+  position: absolute;
+  z-index: 99;
+  top: 3vh;
+  left: 2vw;
+  font-size: 3em;
 }
 /* page3 ends */
+
+/* page4 starts */
+.page4{
+  height: 100vh;
+}
+/* page4 ends */
