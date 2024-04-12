@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --width: 220px;
+  --width: 400px;
   --gap: 1rem;
   --speed: 500ms;
 }
 
 .slider {
+  margin-top: 3vh;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: flex;
   align-items: center;
 }
@@ -18,7 +19,7 @@
   display: flex;
   align-items: center;
   width: var(--width);
-  height: calc(var(--width) * 1.5);
+  height: calc(var(--width) * 0.6);
   position: absolute;
   z-index: 1;
   border-radius: 0.25rem;

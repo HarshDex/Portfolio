@@ -317,9 +317,9 @@ body {
 }
 .page3 h1{
   position: absolute;
+  left: 3.9vw;
   z-index: 99;
   top: 3vh;
-  left: 2vw;
   font-size: 3em;
 }
 /* page3 ends */
