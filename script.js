@@ -190,15 +190,14 @@ function activate(e) {
 document.addEventListener("click", activate, false);
 
 
-gsap.to('.page3',{
+gsap.to('.page4',{
   opacity:1,
   scrollTrigger : {
-    trigger : ".page3",
+    trigger : ".page4",
     scroller : ".main",
     start : 'top 70%',
     end : "top 10%",
     scrub : true,
-    markers : true,
   }
 })
 

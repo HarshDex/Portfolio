@@ -37,7 +37,7 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    box-shadow: 0px 0px 50px 25px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 0px 50px 25px rgba(0, 0, 0, 0.542) inset;
     transition: box-shadow var(--speed);
     will-change: transform, opacity;
   }
@@ -59,7 +59,7 @@
     opacity: 1;
     filter: blur(0);
     &::after {
-      box-shadow: 0px -50px 150px 50px rgba(0, 0, 0, 0.75) inset;
+      box-shadow: 0px -50px 150px 50px rgba(0, 0, 0, 0.985) inset;
     }
   }
 
@@ -145,7 +145,7 @@
   gap: 0.5rem;
   position: absolute;
   left: 50%;
-  bottom: 5%;
+  bottom: 8%;
   transform: translateX(-50%);
   z-index: 5;
   user-select: none;

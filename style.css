@@ -304,7 +304,25 @@ body {
 /* page 2 ends */
 
 /* page3 starts */
-.page3 {
+.page3{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  margin : 3em;
+}
+.page3-heading{
+  position: absolute;
+  right: 6vw;
+  height: fit-content;
+  width: fit-content;
+  margin-right: 3vw;
+  font-size: 2.4em;
+}
+
+/* page3 ends */
+
+/* page4 starts */
+.page4 {
   height: 100vh;
   position: relative;
   width: 100%;
@@ -315,17 +333,11 @@ body {
   overflow: hidden;
   opacity: 0;
 }
-.page3 h1{
+.page4 h1{
   position: absolute;
   left: 3.9vw;
   z-index: 99;
-  top: 3vh;
+  top: 1vh;
   font-size: 3em;
 }
-/* page3 ends */
-
-/* page4 starts */
-.page4{
-  height: 100vh;
-}
-/* page4 ends */
+/* page 4 ends */
