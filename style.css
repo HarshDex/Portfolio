@@ -12,6 +12,7 @@ body {
   margin: 0;
   background-color: rgb(0, 0, 0);
   color: #b7b3b3;
+  overflow-x : hidden;
   
 }
 
@@ -77,6 +78,9 @@ body {
   font-size: 16px;
 }
 
+.lavender {
+  color : rgb(123, 37, 157)
+}
 /* page1 starts */
 .page1 {
   background-color: #000000;
@@ -317,14 +321,19 @@ body {
   display: flex;
   padding: 2em;
   flex-direction: column;
-  opacity: 0;
 }
 
-.page3-heading{
+
+.page3-heading h1 span{
+  display: inline-block;
   justify-self: flex-end;
   height: fit-content;
   width: fit-content;
   font-size: 2.4em;
+}
+
+.page3-heading h1 i span{
+  color: purple;
 }
 
 /* page3 ends */

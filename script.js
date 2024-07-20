@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true,
-  offset: 500
+  // offset: 500
 });
 
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -162,8 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: ".page2",
       scroller: '.main',
       start: "top top",
-      end: "+=300%",
+      end: "top -200%",
       pin: true,
+      pinSpacing: true,
       scrub: true,
       onUpdate: self => {
         const progress = self.progress.toFixed(2);
@@ -179,26 +180,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-const slider = document.querySelector(".slider");
-
-function activate(e) {
-  const items = document.querySelectorAll(".item");
-  e.target.matches(".next") && slider.append(items[0]);
-  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
-}
-
-document.addEventListener("click", activate, false);
+});
 
 
-gsap.to('.page3',{
-  opacity:1,
-  scrollTrigger : {
-    trigger : ".page3",
-    scroller : ".main",
-    start : 'top 70%',
-    end : "top 10%",
-    scrub : true,
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page3",
+    scroller: ".main",
+    start: '200% 90%',
+    end: "225% 70%",
+    scrub: true,
+    markers: true,
   }
+})
+tl.from('.page3-heading h1 span', {
+  y :  -100,
+  opacity: 0,
+  stagger: 0.2,
+  duration : .4,
 })
 
 gsap.to('.page4',{
@@ -222,4 +222,3 @@ locoScroll.on('scroll', (instance) => {
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
-});
