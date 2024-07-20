@@ -1,0 +1,24 @@
+# Allow all bots to access the entire site
+User-agent: *
+Disallow:
+
+# Disallow access to certain directories that do not contribute to SEO
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Disallow access to admin and login pages
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+
+# Disallow access to sensitive files
+Disallow: /private/
+Disallow: /config/
+
+# Allow access to specific files or directories within disallowed sections
+Allow: /admin/admin-ajax.php
+Allow: /private/some-public-file.html
+
+# Specify the location of the sitemap
+Sitemap: https://www.example.com/sitemap.xml

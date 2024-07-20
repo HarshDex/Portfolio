@@ -190,6 +190,17 @@ function activate(e) {
 document.addEventListener("click", activate, false);
 
 
+gsap.to('.page3',{
+  opacity:1,
+  scrollTrigger : {
+    trigger : ".page3",
+    scroller : ".main",
+    start : 'top 70%',
+    end : "top 10%",
+    scrub : true,
+  }
+})
+
 gsap.to('.page4',{
   opacity:1,
   scrollTrigger : {
@@ -200,6 +211,7 @@ gsap.to('.page4',{
     scrub : true,
   }
 })
+
 
 
 locoScroll.on('scroll', (instance) => {

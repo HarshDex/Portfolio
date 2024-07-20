@@ -7,6 +7,8 @@
 }
 
 .slider {
+  border-radius: 30px;
+
   margin-top: 3vh;
   position: relative;
   width: 80%;
@@ -16,6 +18,7 @@
 }
 
 .item {
+  border-radius: 30px;
   display: flex;
   align-items: center;
   width: var(--width);

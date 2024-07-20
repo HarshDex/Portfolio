@@ -308,14 +308,15 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
-  margin : 3em;
+  padding: 2em;
+  flex-direction: column;
+  opacity: 0;
 }
+
 .page3-heading{
-  position: absolute;
-  right: 6vw;
+  justify-self: flex-end;
   height: fit-content;
   width: fit-content;
-  margin-right: 3vw;
   font-size: 2.4em;
 }
 
