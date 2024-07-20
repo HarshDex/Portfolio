@@ -178,8 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  
-
 });
 
 
@@ -188,9 +186,9 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".page3",
     scroller: ".main",
-    start: '200% 90%',
-    end: "225% 70%",
-    scrub: true,
+    start: '200% 80%',
+    end: "300% bottom",
+    scrub: 2,
     markers: true,
   }
 })
@@ -200,6 +198,29 @@ tl.from('.page3-heading h1 span', {
   stagger: 0.2,
   duration : .4,
 })
+.from(".page3-content-part1",{
+  x : "-50vw",
+  opacity : 0,
+  duration : 6,
+})
+.from(".page3-content-part2",{
+  x : "50vw",
+  opacity : 0,
+  duration : 6,
+})
+.from(".page3-content-part3",{
+  x : "-50vw",
+  opacity : 0,
+  duration : 6,
+})
+.from(".page3-content-part4",{
+  x : "50vw",
+  opacity : 0,
+  duration : 6,
+})
+
+
+
 
 gsap.to('.page4',{
   opacity:1,
