@@ -1,11 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// Initialize Locomotive Scroll
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true,
-  // offset: 500
+  // Remove or adjust the offset as needed
 });
 
+// Sync Locomotive Scroll with GSAP ScrollTrigger
 locoScroll.on("scroll", ScrollTrigger.update);
 
 ScrollTrigger.scrollerProxy(".main", {
@@ -22,13 +24,10 @@ ScrollTrigger.scrollerProxy(".main", {
       height: window.innerHeight
     };
   },
-  pinType: document.querySelector(".main").style.transform
-    ? "transform"
-    : "fixed"
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
 });
 
-
-
+// GSAP animations
 const e = document.querySelector('.loading-screen p').innerHTML;
 const em = document.querySelector('.loading-screen p');
 const loadingText = e.split(' ');
@@ -60,15 +59,15 @@ gsap.to('.loading-screen', {
   delay: 2,
   onComplete: () => {
     locoScroll.update(); 
-    ScrollTrigger.refresh()
+    ScrollTrigger.refresh();
   }
 });
+
 gsap.to('.loading-screen p', { display: 'none', delay: 1.8 });
 gsap.to('.loading-screen img', { display: 'none', delay: 1.5 });
 gsap.to('.page1-headings h1', { opacity: 1, delay: 2.5, duration: 1 });
 
 const typedTextSpans = document.querySelectorAll('.typed-text');
-
 function typeText(element, texts, delay = 150) {
   let currentTextIndex = 0;
   let charIndex = 0;
@@ -114,7 +113,6 @@ gsap.to('.circle', {
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const dynamicText = [
     "1) Hey, My name is Harsh Vardhan Shah and I am a Full Stack Developer.", 
@@ -127,38 +125,41 @@ document.addEventListener("DOMContentLoaded", function () {
   const dynamicTextElement = document.querySelector(".dynamic-text");
   let currentTextIndex = 0;
 
-  gsap.to('.page2-about h1',{
-    opacity : 1,
-    scrollTrigger : {
-      scroller : ".main",
-      trigger : '.page2',
-      start : "top 60%",
-      end : 'top 10%',
-      scrub : true,
+  gsap.to('.page2-about h1', {
+    opacity: 1,
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: '.page2',
+      start: "top 60%",
+      end: 'top 10%',
+      scrub: true,
     }
-  })
-  gsap.to('.page2-image',{
-    rotate : "5deg",
-    scrollTrigger : {
-      scroller : ".main",
-      trigger : '.page2',
-      start : "top 60%",
-      end : 'top 10%',
-      scrub : true,
+  });
+  
+  gsap.to('.page2-image', {
+    rotate: "5deg",
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: '.page2',
+      start: "top 60%",
+      end: 'top 10%',
+      scrub: true,
     }
-  })
-  gsap.to('.page2-image img',{
-    opacity : 1,
-    scrollTrigger : {
-      scroller : ".main",
-      trigger : '.page2',
-      start : "top 60%",
-      end : 'top 10%',
-      scrub : true,
+  });
+  
+  gsap.to('.page2-image img', {
+    opacity: 1,
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: '.page2',
+      start: "top 60%",
+      end: 'top 10%',
+      scrub: true,
     }
-  })
+  });
+
   gsap.to('.page2', {
-      scrollTrigger: {
+    scrollTrigger: {
       trigger: ".page2",
       scroller: '.main',
       start: "top top",
@@ -180,60 +181,32 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+gsap.timeline();
 
-
-const tl = gsap.timeline({
+gsap.from('.page3-heading h1 span', {
+  y: -100,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
   scrollTrigger: {
     trigger: ".page3",
     scroller: ".main",
-    start: '200% 80%',
-    end: "300% bottom",
+    start: '150% 90%',
+    end: "190% 90%",
     scrub: 2,
-    markers: true,
   }
-})
-tl.from('.page3-heading h1 span', {
-  y :  -100,
-  opacity: 0,
-  stagger: 0.2,
-  duration : .4,
-})
-.from(".page3-content-part1",{
-  x : "-50vw",
-  opacity : 0,
-  duration : 6,
-})
-.from(".page3-content-part2",{
-  x : "50vw",
-  opacity : 0,
-  duration : 6,
-})
-.from(".page3-content-part3",{
-  x : "-50vw",
-  opacity : 0,
-  duration : 6,
-})
-.from(".page3-content-part4",{
-  x : "50vw",
-  opacity : 0,
-  duration : 6,
-})
+});
 
-
-
-
-gsap.to('.page4',{
-  opacity:1,
-  scrollTrigger : {
-    trigger : ".page4",
-    scroller : ".main",
-    start : 'top 70%',
-    end : "top 10%",
-    scrub : true,
+gsap.to('.page4', {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".page4",
+    scroller: ".main",
+    start: 'top 70%',
+    end: "top 10%",
+    scrub: true,
   }
-})
-
-
+});
 
 locoScroll.on('scroll', (instance) => {
   if (instance.direction === 'down' && instance.scroll.y >= instance.limit.y) {

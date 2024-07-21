@@ -317,7 +317,7 @@ body {
 /* page3 starts */
 .page3{
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   padding: 2em;
   flex-direction: column;
@@ -330,42 +330,50 @@ body {
   height: fit-content;
   width: fit-content;
   font-size: 2.4em;
+  margin-bottom: .3em;
 }
 
 .page3-heading h1 i span{
   color: purple;
 }
-
-.page3-content{
+.page3-content-part {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+}
+
+.page3-content-part-inside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height : 100vh;
-  overflow: hidden;
+  gap: 10px;
+  height: 45%;
+  width: 30%;
+  /* border: 1px solid white; */
+  cursor: pointer;
+  transition: all ease .7s;
+}
+.tech-stack-image{
+  height: 70%;
+  width: 50%;
+}
+.tech-stack-image img{
+  height:100%;
+  width: 100%;
+  object-fit: contain;
+}
+.tech-stack-title{
+
 }
 
-.page3-content-part1{
-  height: 20vh;
-  width: 100%;
-  background-color:red;
+.page3-content-part-inside:hover{
+  transform: scale(1.03);
 }
-
-.page3-content-part2{
-  height: 20vh;
-  width: 100%;
-  background-color:skyblue
-}
-.page3-content-part3{
-  height: 20vh;
-  width: 100%;
-  background-color:rgb(143, 25, 207)
-}
-.page3-content-part4{
-  height: 20vh;
-  width: 100%;
-  background-color:rgb(171, 113, 46)
-}
-
-
 
 
 /* page3 ends */
@@ -381,6 +389,7 @@ body {
   justify-content: center;
   overflow: hidden;
   opacity: 0;
+  background-color: white;
 }
 .page4 h1{
   position: absolute;
